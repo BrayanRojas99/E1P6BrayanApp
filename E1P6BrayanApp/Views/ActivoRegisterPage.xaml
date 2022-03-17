@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="E1P6BrayanApp.Views.ActivoRegisterPage">
+    <ContentPage.Content>
+        <StackLayout Padding="50,0,50,0" VerticalOptions="Center">
+            <Entry x:Name="TxtNombre"  TextTransform="Uppercase" Placeholder="Nombre" FontSize="Large" TextColor="White"/>
+            <Entry x:Name="TxtNumeroSerie"  Keyboard="Numeric" Placeholder="Numero Serie" FontSize="Large" TextColor="White"/>
+            <Entry x:Name="TxtCostoActivo"  Keyboard="Numeric" Placeholder="Costo Activo" FontSize="Large" TextColor="White"/>
+            <Entry x:Name="TxtDescripcion"  TextTransform="Uppercase" Placeholder="Descripcion" FontSize="Large" TextColor="White"/>
+            <Entry x:Name="TxtUbicacion"  TextTransform="Uppercase" Placeholder="Ubicacion" FontSize="Large" TextColor="White"/>
+            <Entry x:Name="TxtResponsable"  TextTransform="Uppercase" Placeholder="Responsable" FontSize="Large" TextColor="White"/>
+            <Entry x:Name="TxtFechaRegistro"  Keyboard="" Placeholder="Fecha Registro" FontSize="Large" TextColor="White"/>
+            <Entry x:Name="TxtEstado"  Placeholder="Estado" FontSize="Large" TextColor="White"/>
+            <FlexLayout>
+                <Button x:Name="BtnGuardar" VerticalOptions="Center" Text="Guardar" Clicked="cmdGuardar"  FontSize="Large" CornerRadius="15" TextColor="White" BackgroundColor="DarkGreen" BorderColor="White" BorderWidth="1"/>
+                <Button x:Name="BtnRegresar" VerticalOptions="Center" Text="Regresar" Clicked="cmdRegresar" FontSize="Medium" CornerRadius="15" BackgroundColor="#59CF35" BorderColor="White" BorderWidth="1"/>
+            </FlexLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

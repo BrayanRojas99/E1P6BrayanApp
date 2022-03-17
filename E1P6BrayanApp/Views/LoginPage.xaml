@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="E1P6BrayanApp.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundImageSource="ss.jpg"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Padding="50,0,50,0" VerticalOptions="Center">
+            <Entry x:Name="TxtUserName" Placeholder="Email" TextTransform="Lowercase" FontSize="Large" TextColor="black" BackgroundColor="White"/>
+            <Entry x:Name="TxtPassword" Placeholder="Password"  IsPassword="True" FontSize="Large" TextColor="black" BackgroundColor="White"/>
+            <Switch x:Name="SwSeePassword" IsToggled="false" Toggled="CmdSeePassword" BackgroundColor="White"/>
+            <Button x:Name="BtnLogin" VerticalOptions="Center" Text="Login"  FontSize="Large" CornerRadius="15" TextColor="White" BackgroundColor="DarkGreen" BorderColor="White" BorderWidth="1" Clicked="CmdUserInicio"/>
+            <Button x:Name="BtnCancelar" VerticalOptions="Center" Text="Cancelar" FontSize="Medium" CornerRadius="15" BackgroundColor="Aqua" BorderColor="White" BorderWidth="1" Clicked="CmdSalir"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
